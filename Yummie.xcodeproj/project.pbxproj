@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F24B220827AB46C400AADBB8 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B220727AB46C400AADBB8 /* UIViewExtension.swift */; };
+		F24B220A27AB4BE100AADBB8 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B220927AB4BE100AADBB8 /* OnboardingSlide.swift */; };
+		F24B220C27AB4EE600AADBB8 /* OnboadingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24B220B27AB4EE600AADBB8 /* OnboadingCollectionViewCell.swift */; };
 		F2C4672427AACF8200271AEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C4672327AACF8200271AEA /* AppDelegate.swift */; };
 		F2C4672627AACF8200271AEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C4672527AACF8200271AEA /* SceneDelegate.swift */; };
-		F2C4672827AACF8200271AEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C4672727AACF8200271AEA /* ViewController.swift */; };
 		F2C4672B27AACF8200271AEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C4672927AACF8200271AEA /* Main.storyboard */; };
 		F2C4672D27AACF8400271AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2C4672C27AACF8400271AEA /* Assets.xcassets */; };
 		F2C4673027AACF8400271AEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C4672E27AACF8400271AEA /* LaunchScreen.storyboard */; };
+		F2C4673C27AAD39000271AEA /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C4673B27AAD38F00271AEA /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F24B220727AB46C400AADBB8 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		F24B220927AB4BE100AADBB8 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		F24B220B27AB4EE600AADBB8 /* OnboadingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboadingCollectionViewCell.swift; sourceTree = "<group>"; };
 		F2C4672027AACF8200271AEA /* Yummie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C4672327AACF8200271AEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2C4672527AACF8200271AEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F2C4672727AACF8200271AEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F2C4672A27AACF8200271AEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2C4672C27AACF8400271AEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2C4672F27AACF8400271AEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2C4673127AACF8400271AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C4673B27AAD38F00271AEA /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F24B220627AB466B00AADBB8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F24B220727AB46C400AADBB8 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F2C4671727AACF8200271AEA = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +70,50 @@
 		F2C4672227AACF8200271AEA /* Yummie */ = {
 			isa = PBXGroup;
 			children = (
+				F24B220627AB466B00AADBB8 /* Extensions */,
+				F2C4673927AAD33E00271AEA /* CustomViews */,
+				F2C4673827AAD33200271AEA /* Views */,
+				F2C4673727AAD32800271AEA /* Models */,
 				F2C4672327AACF8200271AEA /* AppDelegate.swift */,
 				F2C4672527AACF8200271AEA /* SceneDelegate.swift */,
-				F2C4672727AACF8200271AEA /* ViewController.swift */,
-				F2C4672927AACF8200271AEA /* Main.storyboard */,
 				F2C4672C27AACF8400271AEA /* Assets.xcassets */,
 				F2C4672E27AACF8400271AEA /* LaunchScreen.storyboard */,
 				F2C4673127AACF8400271AEA /* Info.plist */,
 			);
 			path = Yummie;
+			sourceTree = "<group>";
+		};
+		F2C4673727AAD32800271AEA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F24B220927AB4BE100AADBB8 /* OnboardingSlide.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F2C4673827AAD33200271AEA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2C4672927AACF8200271AEA /* Main.storyboard */,
+				F2C4673A27AAD36600271AEA /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2C4673927AAD33E00271AEA /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		F2C4673A27AAD36600271AEA /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F2C4673B27AAD38F00271AEA /* OnboardingViewController.swift */,
+				F24B220B27AB4EE600AADBB8 /* OnboadingCollectionViewCell.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2C4672827AACF8200271AEA /* ViewController.swift in Sources */,
+				F24B220A27AB4BE100AADBB8 /* OnboardingSlide.swift in Sources */,
 				F2C4672427AACF8200271AEA /* AppDelegate.swift in Sources */,
 				F2C4672627AACF8200271AEA /* SceneDelegate.swift in Sources */,
+				F24B220827AB46C400AADBB8 /* UIViewExtension.swift in Sources */,
+				F24B220C27AB4EE600AADBB8 /* OnboadingCollectionViewCell.swift in Sources */,
+				F2C4673C27AAD39000271AEA /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
