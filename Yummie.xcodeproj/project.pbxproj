@@ -28,6 +28,9 @@
 		F2C4673C27AAD39000271AEA /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C4673B27AAD38F00271AEA /* OnboardingViewController.swift */; };
 		F2D32F3B27B3D61300EEA4F4 /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D32F3A27B3D61300EEA4F4 /* DishDetailViewController.swift */; };
 		F2D32F3D27B3D88900EEA4F4 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D32F3C27B3D88900EEA4F4 /* UIViewControllerExtension.swift */; };
+		F2D32F4227B3EB9600EEA4F4 /* DishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D32F4027B3EB9600EEA4F4 /* DishListTableViewCell.swift */; };
+		F2D32F4327B3EB9600EEA4F4 /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D32F4127B3EB9600EEA4F4 /* DishListTableViewCell.xib */; };
+		F2D32F4627B3EFF800EEA4F4 /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D32F4527B3EFF800EEA4F4 /* ListDishesViewController.swift */; };
 		F2F5A2E227AB748000D366B8 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F5A2E127AB748000D366B8 /* StringExtensions.swift */; };
 		F2F5A2E527AD89CA00D366B8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F5A2E427AD89CA00D366B8 /* CardView.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +60,9 @@
 		F2C4673B27AAD38F00271AEA /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		F2D32F3A27B3D61300EEA4F4 /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
 		F2D32F3C27B3D88900EEA4F4 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		F2D32F4027B3EB9600EEA4F4 /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
+		F2D32F4127B3EB9600EEA4F4 /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
+		F2D32F4527B3EFF800EEA4F4 /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
 		F2F5A2E127AB748000D366B8 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		F2F5A2E427AD89CA00D366B8 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FA209C772FFCFC1597F1072A /* Pods-Yummie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yummie.debug.xcconfig"; path = "Target Support Files/Pods-Yummie/Pods-Yummie.debug.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +199,7 @@
 		F2C4673827AAD33200271AEA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F2D32F4427B3EFC300EEA4F4 /* ListDishes */,
 				F2D32F3927B3D5D300EEA4F4 /* DishDetail */,
 				F2C4672927AACF8200271AEA /* Main.storyboard */,
 				F24B220D27AB603F00AADBB8 /* Home */,
@@ -204,6 +211,7 @@
 		F2C4673927AAD33E00271AEA /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				F2D32F3E27B3EB4700EEA4F4 /* TableViewCells */,
 				F2F5A2E327AD899A00D366B8 /* CardView */,
 				F24B221127AB6B2600AADBB8 /* CollectionViewCells */,
 			);
@@ -225,6 +233,31 @@
 				F2D32F3A27B3D61300EEA4F4 /* DishDetailViewController.swift */,
 			);
 			path = DishDetail;
+			sourceTree = "<group>";
+		};
+		F2D32F3E27B3EB4700EEA4F4 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F2D32F3F27B3EB5600EEA4F4 /* DishListTableViewCells */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		F2D32F3F27B3EB5600EEA4F4 /* DishListTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F2D32F4027B3EB9600EEA4F4 /* DishListTableViewCell.swift */,
+				F2D32F4127B3EB9600EEA4F4 /* DishListTableViewCell.xib */,
+			);
+			path = DishListTableViewCells;
+			sourceTree = "<group>";
+		};
+		F2D32F4427B3EFC300EEA4F4 /* ListDishes */ = {
+			isa = PBXGroup;
+			children = (
+				F2D32F4527B3EFF800EEA4F4 /* ListDishesViewController.swift */,
+			);
+			path = ListDishes;
 			sourceTree = "<group>";
 		};
 		F2F5A2E327AD899A00D366B8 /* CardView */ = {
@@ -296,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F24B221727AB6B8900AADBB8 /* CategoryCollectionViewCell.xib in Resources */,
+				F2D32F4327B3EB9600EEA4F4 /* DishListTableViewCell.xib in Resources */,
 				F2C4673027AACF8400271AEA /* LaunchScreen.storyboard in Resources */,
 				F27DA2C827B1829800781EA0 /* DishPortraitCollectionViewCell.xib in Resources */,
 				F2C4672D27AACF8400271AEA /* Assets.xcassets in Resources */,
@@ -353,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D32F4227B3EB9600EEA4F4 /* DishListTableViewCell.swift in Sources */,
 				F24B221627AB6B8900AADBB8 /* CategoryCollectionViewCell.swift in Sources */,
 				F24B220A27AB4BE100AADBB8 /* OnboardingSlide.swift in Sources */,
 				F2F5A2E227AB748000D366B8 /* StringExtensions.swift in Sources */,
@@ -366,6 +401,7 @@
 				F27DA2CE27B19DFE00781EA0 /* DishLandscapeCollectionViewCell.swift in Sources */,
 				F24B221927AB6E5D00AADBB8 /* DishCategory.swift in Sources */,
 				F2F5A2E527AD89CA00D366B8 /* CardView.swift in Sources */,
+				F2D32F4627B3EFF800EEA4F4 /* ListDishesViewController.swift in Sources */,
 				F2C4673C27AAD39000271AEA /* OnboardingViewController.swift in Sources */,
 				F27DA2CA27B1852F00781EA0 /* Dish.swift in Sources */,
 				F27DA2C727B1829800781EA0 /* DishPortraitCollectionViewCell.swift in Sources */,

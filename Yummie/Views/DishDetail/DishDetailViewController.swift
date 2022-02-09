@@ -8,7 +8,7 @@
 import UIKit
 
 class DishDetailViewController: UIViewController {
-
+    
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dishImageView: UIImageView!

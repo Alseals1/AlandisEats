@@ -74,6 +74,7 @@
             <size key="customSize" width="224" height="237"/>
             <connections>
                 <outlet property="CaloriesLabel" destination="zhg-dm-Cgh" id="vxP-jF-KTx"/>
+                <outlet property="caloriesLabel" destination="zhg-dm-Cgh" id="aox-7x-Rlm"/>
                 <outlet property="desciptionLabel" destination="fAn-LO-0iK" id="lVN-bg-Jky"/>
                 <outlet property="dishImageView" destination="F3n-NQ-OUz" id="mv5-Be-aFY"/>
                 <outlet property="titleLabel" destination="ZNH-QO-JRB" id="NHw-S3-p8I"/>
