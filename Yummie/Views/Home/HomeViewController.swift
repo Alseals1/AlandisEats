@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     
     var categories: [DishCategory] = [
         .init(id: "id1", name: "American Dish", image: "Photo by Lisa Fotios from Pexels: https://www.pexels.com/photo/selective-focus-photography-of-pasta-with-tomato-and-basil-1279330/"),
-            .init(id: "id1", name: "American Dish 2", image: "Photo by Lisa Fotios from Pexels: https://www.pexels.com/photo/selective-focus-photography-of-pasta-with-tomato-and-basil-1279330/"),
+            .init(id: "id1", name: "American Dish 2", image: "https://www.pexels.com/photo/selective-focus-photography-of-pasta-with-tomato-and-basil-1279330/"),
             .init(id: "id1", name: "American Dish 3", image: "https://www.pexels.com/photo/selective-focus-photography-of-pasta-with-tomato-and-basil-1279330/"),
             .init(id: "id1", name: "American Dish 4", image: "Photo by Lisa Fotios from Pexels: https://www.pexels.com/photo/selective-focus-photography-of-pasta-with-tomato-and-basil-1279330/"),
             .init(id: "id1", name: "American Dish 5", image: "Photo by Lisa Fotios from Pexels: https://www.pexels.com/photo/selective-focus-photography-of-pasta-with-tomato-and-basil-1279330/"),
@@ -23,14 +23,14 @@ class HomeViewController: UIViewController {
     ]
     
     var populars: [Dish] = [
-        .init(id: "id1", name: "Chicken", image:" https://images.pexels.com/photos/2317540/pexels-photo-2317540.jpeg?cs=srgb&dl=pexels-vicky-tran-2317540.jpg&fm=jpg", description: "This the best Chicken on earth", caloies: 190),
-        .init(id: "id1", name: "Garri", image:" https://images.pexels.com/photos/2317540/pexels-photo-2317540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260", description: "This the best Chicken on earth", caloies: 500),
-        .init(id: "id1", name: "Pizza", image:" https://images.pexels.com/photos/2317540/pexels-photo-2317540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260", description: "This the best Chicken on earth", caloies: 1000)
+        .init(id: "id1", name: "Chicken", image: "https://images.pexels.com/photos/2317540/pexels-photo-2317540.jpeg?cs=srgb&dl=pexels-vicky-tran-2317540.jpg&fm=jpg", description: "This the best Chicken on earth This the best Chicken on earth This the best Chicken on earth This the best Chicken on earth This the best Chicken on earth This the best Chicken on earth This the best Chicken on earth This the best Chicken on earth This the best Chicken on earth", caloies: 190),
+        .init(id: "id1", name: "Garri", image: "https://media.istockphoto.com/photos/oha-soup-with-beef-and-garri-picture-id1327486588?s=612x612", description: "This the best Chicken on earth", caloies: 500),
+        .init(id: "id1", name: "Pizza", image: "https://images.pexels.com/photos/2762942/pexels-photo-2762942.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", description: "This the best Chicken on earth", caloies: 1000)
     ]
     var specials: [Dish] = [
-        .init(id: "id1", name: "Fried Plaintain", image:" https://images.pexels.com/photos/2317540/pexels-photo-2317540.jpeg?cs=srgb&dl=pexels-vicky-tran-2317540.jpg&fm=jpg", description: "This the best Chicken on earth", caloies: 190),
-        .init(id: "id1", name: "Turkey Sandwish", image:" https://images.pexels.com/photos/2317540/pexels-photo-2317540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260", description: "This the best Chicken on earth", caloies: 500),
-        .init(id: "id1", name: "Shrimp salad", image:" https://images.pexels.com/photos/2317540/pexels-photo-2317540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260", description: "This the best Chicken on earth", caloies: 1000)
+        .init(id: "id1", name: "Fried Plaintain", image: "https://images.pexels.com/photos/5409328/pexels-photo-5409328.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", description: "This the best Chicken on earth", caloies: 190),
+        .init(id: "id1", name: "Turkey Sandwish", image: "https://images.pexels.com/photos/11101371/pexels-photo-11101371.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", description: "This the best Chicken on earth", caloies: 500),
+        .init(id: "id1", name: "Shrimp salad", image: "https://images.pexels.com/photos/10281067/pexels-photo-10281067.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500", description: "This the best Chicken on earth", caloies: 1000)
     ]
     
     override func viewDidLoad() {
@@ -82,5 +82,15 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return UICollectionViewCell()
         }
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == categoryCollectionView {
+            
+        }else {
+            let controller = DishDetailViewController.instantiate()
+            controller.dish = collectionView == popularCollectionView ? populars[indexPath.row] : specials[indexPath.row]
+            navigationController?.pushViewController(controller, animated: true)
+        }
     }
 }
