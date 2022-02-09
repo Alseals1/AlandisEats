@@ -31,6 +31,8 @@
 		F2D32F4227B3EB9600EEA4F4 /* DishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D32F4027B3EB9600EEA4F4 /* DishListTableViewCell.swift */; };
 		F2D32F4327B3EB9600EEA4F4 /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D32F4127B3EB9600EEA4F4 /* DishListTableViewCell.xib */; };
 		F2D32F4627B3EFF800EEA4F4 /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D32F4527B3EFF800EEA4F4 /* ListDishesViewController.swift */; };
+		F2D32F4927B411D900EEA4F4 /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D32F4827B411D900EEA4F4 /* ListOrdersViewController.swift */; };
+		F2D32F4B27B4162B00EEA4F4 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D32F4A27B4162B00EEA4F4 /* Order.swift */; };
 		F2F5A2E227AB748000D366B8 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F5A2E127AB748000D366B8 /* StringExtensions.swift */; };
 		F2F5A2E527AD89CA00D366B8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F5A2E427AD89CA00D366B8 /* CardView.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,8 @@
 		F2D32F4027B3EB9600EEA4F4 /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
 		F2D32F4127B3EB9600EEA4F4 /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
 		F2D32F4527B3EFF800EEA4F4 /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
+		F2D32F4827B411D900EEA4F4 /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
+		F2D32F4A27B4162B00EEA4F4 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		F2F5A2E127AB748000D366B8 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		F2F5A2E427AD89CA00D366B8 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FA209C772FFCFC1597F1072A /* Pods-Yummie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yummie.debug.xcconfig"; path = "Target Support Files/Pods-Yummie/Pods-Yummie.debug.xcconfig"; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 				F24B220927AB4BE100AADBB8 /* OnboardingSlide.swift */,
 				F24B221827AB6E5D00AADBB8 /* DishCategory.swift */,
 				F27DA2C927B1852F00781EA0 /* Dish.swift */,
+				F2D32F4A27B4162B00EEA4F4 /* Order.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 		F2C4673827AAD33200271AEA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F2D32F4727B411BE00EEA4F4 /* ListOrders */,
 				F2D32F4427B3EFC300EEA4F4 /* ListDishes */,
 				F2D32F3927B3D5D300EEA4F4 /* DishDetail */,
 				F2C4672927AACF8200271AEA /* Main.storyboard */,
@@ -258,6 +264,14 @@
 				F2D32F4527B3EFF800EEA4F4 /* ListDishesViewController.swift */,
 			);
 			path = ListDishes;
+			sourceTree = "<group>";
+		};
+		F2D32F4727B411BE00EEA4F4 /* ListOrders */ = {
+			isa = PBXGroup;
+			children = (
+				F2D32F4827B411D900EEA4F4 /* ListOrdersViewController.swift */,
+			);
+			path = ListOrders;
 			sourceTree = "<group>";
 		};
 		F2F5A2E327AD899A00D366B8 /* CardView */ = {
@@ -388,6 +402,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2D32F4227B3EB9600EEA4F4 /* DishListTableViewCell.swift in Sources */,
+				F2D32F4927B411D900EEA4F4 /* ListOrdersViewController.swift in Sources */,
+				F2D32F4B27B4162B00EEA4F4 /* Order.swift in Sources */,
 				F24B221627AB6B8900AADBB8 /* CategoryCollectionViewCell.swift in Sources */,
 				F24B220A27AB4BE100AADBB8 /* OnboardingSlide.swift in Sources */,
 				F2F5A2E227AB748000D366B8 /* StringExtensions.swift in Sources */,
