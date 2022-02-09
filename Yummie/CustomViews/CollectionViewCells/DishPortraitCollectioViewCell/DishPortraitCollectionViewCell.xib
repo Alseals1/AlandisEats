@@ -76,7 +76,7 @@
                 <outlet property="CaloriesLabel" destination="zhg-dm-Cgh" id="vxP-jF-KTx"/>
                 <outlet property="desciptionLabel" destination="fAn-LO-0iK" id="lVN-bg-Jky"/>
                 <outlet property="dishImageView" destination="F3n-NQ-OUz" id="mv5-Be-aFY"/>
-                <outlet property="titileLabel" destination="ZNH-QO-JRB" id="NHw-S3-p8I"/>
+                <outlet property="titleLabel" destination="ZNH-QO-JRB" id="NHw-S3-p8I"/>
             </connections>
             <point key="canvasLocation" x="115.94202898550725" y="123.88392857142857"/>
         </collectionViewCell>

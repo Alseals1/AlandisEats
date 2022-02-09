@@ -240,18 +240,22 @@
                                                         <color key="textColor" systemColor="systemGrayColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Abh-ck-Uor">
+                                                    <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Abh-ck-Uor">
                                                         <rect key="frame" x="0.0" y="48" width="414" height="120"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="120" id="FDJ-VI-9P9"/>
                                                         </constraints>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1at-bZ-7s3">
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1at-bZ-7s3">
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="sectionInset" minX="20" minY="0.0" maxX="22" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells/>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="9KY-KE-LPQ" id="Ove-OI-apq"/>
+                                                            <outlet property="delegate" destination="9KY-KE-LPQ" id="XIZ-K1-1EQ"/>
+                                                        </connections>
                                                     </collectionView>
                                                 </subviews>
                                                 <constraints>
@@ -295,6 +299,7 @@
                     <connections>
                         <outlet property="categoryCollectionView" destination="Dwg-LC-8uh" id="JBI-Dw-yPc"/>
                         <outlet property="popularCollectionView" destination="dAS-fk-lMy" id="acY-Va-fNd"/>
+                        <outlet property="specialCollectionView" destination="Abh-ck-Uor" id="ygQ-dq-qUQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dhl-y1-ieD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -11,7 +11,7 @@ class DishPortraitCollectionViewCell: UICollectionViewCell {
     
    static let identifier = String(describing: DishPortraitCollectionViewCell.self)
 
-    @IBOutlet weak var titileLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dishImageView: UIImageView!
     @IBOutlet weak var caloriesLabel: UILabel!
     @IBOutlet weak var desciptionLabel: UILabel!
@@ -19,7 +19,7 @@ class DishPortraitCollectionViewCell: UICollectionViewCell {
 
     
     func setup(dish: Dish) {
-        titileLabel.text = dish.name
+        titleLabel.text = dish.name
         dishImageView.kf.setImage(with: dish.image?.asUrl)
         caloriesLabel.text = dish.formatedCalories
         desciptionLabel.text = dish.description
